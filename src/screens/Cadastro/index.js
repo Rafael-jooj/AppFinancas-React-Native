@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 
+import auth from '@react-native-firebase/auth'
 import * as Animatable from 'react-native-animatable';
 
 import { useNavigation } from '@react-navigation/native'
 
 export default function Cadastro() {
+    const Navigation = useNavigation()
 
-  const Navigation = useNavigation()
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
+
+    function SingUp(){
+        auth().createUserWithEmailAndPassword(email, senha).then(userCredential => {
+            console.log('user ', userCredential);
+        }).catch(error => {
+            if(error.code === 'auth/email-already-in-use'){
+                console.log('Email já existente');
+            }
+            if(error.code === 'auth/invalid-email'){
+                console.log('Email invalido');
+            }
+        })
+}
 
   return (
       <View style = {style.container}>
@@ -15,16 +31,13 @@ export default function Cadastro() {
             <Text style={style.title}>Cadastre-se</Text>
         </Animatable.View>
         <Animatable.View style={style.boxContainer} animation="fadeInUp" delay={600}>
-            <Text style={style.inputText}>Nome de Usuário</Text>
-            <TextInput placeholder='Insira um nome de usuário' style={style.input}/>
-
             <Text style={style.inputText}>Email</Text>
-            <TextInput placeholder='Insira um email...' style={style.input}/>
+            <TextInput placeholder='Insira um email...' style={style.input} onChangeText={setEmail}/>
 
             <Text style={style.inputText}>Senha</Text>
-            <TextInput placeholder='Insira uma senha' style={style.input}/>
+            <TextInput secureTextEntry={true} placeholder='Insira uma senha' style={style.input} onChangeText={setSenha}/>
 
-            <TouchableOpacity style={style.button}>
+            <TouchableOpacity style={style.button} onPress={SingUp}>
                 <Text style={style.buttonText}>Cadastrar</Text>
             </TouchableOpacity>
 
