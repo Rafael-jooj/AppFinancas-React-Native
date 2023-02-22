@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
     View, 
     Text, 
@@ -7,11 +7,21 @@ import {
     TextInput 
 } from 'react-native';
 
+import auth from '@react-native-firebase/auth'
 import * as Animatable from 'react-native-animatable';
 
 import { useNavigation } from '@react-navigation/native'
 
 export default function Login() {
+
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
+
+    function SingIn(){
+        auth().signInWithEmailAndPassword(email, senha)
+        .then(()=>console.log('Usuário logado!'))
+        .catch(error => console.log(error))
+    }
 
     const Navigation = useNavigation()
 
@@ -22,13 +32,13 @@ export default function Login() {
             </Animatable.View>
             <Animatable.View style={style.boxContainer} animation="fadeInUp" delay={600}>
                 <Text style={style.inputText}>Email</Text>
-                <TextInput placeholder='Digite um email...' style={style.input}/>
+                <TextInput placeholder='Digite um email...' style={style.input} onChangeText={setEmail}/>
 
                 <Text style={style.inputText}>Senha</Text>
-                <TextInput placeholder='Sua senha' style={style.input}/>
+                <TextInput secureTextEntry={true} placeholder='Sua senha' style={style.input} onChangeText={setSenha}/>
 
                 <TouchableOpacity style={style.button}>
-                    <Text style={style.buttonText}>Acessar</Text>
+                    <Text style={style.buttonText} onPress={SingIn}>Acessar</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={style.cadastro} onPress={()=> Navigation.navigate('SingUp')}>
