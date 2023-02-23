@@ -3,7 +3,7 @@
 ![Badge Concluido](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
 ## Descrição do Projeto
-<p>O mesmo se trata da criação de um aplicativo android que se trata de um sistema de finaças pessoais com sistema de login com integração do Firebase.</p> 
+<p>Esse projeto se trata da criação de um aplicativo android de controle de finaças pessoais com sistema de login com integração do Firebase.</p>
 <p>Dentre as bibliotecas utilizadas estão o react-navigation para transição de telas, rect-native-firebase e o rect-native-animatable para criar as animações de tela</p>
 
 ## Demostração
