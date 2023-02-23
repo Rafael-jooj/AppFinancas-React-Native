@@ -4,7 +4,9 @@ import auth from '@react-native-firebase/auth'
 
 import { NavigationContainer } from '@react-navigation/native'
 import Routes from './src/routes';
+import TabBar from './src/routes/tabBar';
 import Home from './src/screens/Home';
+
 
 export default function App() {
 
@@ -35,7 +37,7 @@ export default function App() {
       <StatusBar
         backgroundColor="#4658ED" barStyle="dark-content"
       />
-      {user ? <Home/> : <Routes/>}
+      {user ? <TabBar/> : <Routes/>}
     </NavigationContainer>
   );
 }
