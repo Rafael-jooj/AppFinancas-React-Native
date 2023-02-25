@@ -41,6 +41,7 @@ function TabBar(){
                 name='Budget'
                 component={Budget}
                 options={{
+                    headerShown: false,
                     tabBarIcon: ({_, size, focused})=>{
                         if(focused){
                             return <Ionicons name='wallet' size={size} color={'#fff'}/>
