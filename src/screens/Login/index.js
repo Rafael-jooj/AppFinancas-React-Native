@@ -42,7 +42,7 @@ export default function Login() {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={style.cadastro} onPress={()=> Navigation.navigate('SingUp')}>
-                    <Text style={{color: '#4658ED'}}>Não possui uma conta? Cadastre-se</Text>
+                    <Text style={{color: '#111'}}>Não possui uma conta? Cadastre-se</Text>
                 </TouchableOpacity>
             </Animatable.View>
     </View>
@@ -52,7 +52,7 @@ export default function Login() {
 const style = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: '#4658ED'
+        backgroundColor: '#111'
     },
     titleContainer:{
         paddingStart: '5%',
@@ -77,17 +77,17 @@ const style = StyleSheet.create({
         fontSize: 18,
         marginTop: 10,
         fontWeight: "400",
-        color: '#4658ED'
+        color: '#111'
     },
     input:{
         borderBottomWidth: 1,
-        borderColor: '#4658ED',
+        borderColor: '#111',
         height: 40,
         marginBottom: 20
     },
     button:{
         width: '100%',
-        backgroundColor: '#4658ED',
+        backgroundColor: '#111',
         borderRadius: 5,
         paddingVertical: 10,
         alignItems: 'center',

@@ -35,7 +35,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <StatusBar
-        backgroundColor="#4658ED" barStyle="dark-content"
+        backgroundColor="#111" barStyle="light-content"
       />
       {user ? <TabBar/> : <Routes/>}
     </NavigationContainer>

@@ -14,7 +14,7 @@ function TabBar(){
                 tabBarShowLabel: false,
                 tabBarStyle:{
                     position: 'absolute',
-                    backgroundColor: '#4658ED',
+                    backgroundColor: 'black',
                     borderTopWidth: 0,
                     bottom: 14,
                     left: 14,

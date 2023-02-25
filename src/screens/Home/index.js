@@ -26,16 +26,18 @@ const style = StyleSheet.create({
     container:{
         flex: 1,
         justifyContent: 'space-around',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#111'
     },
     title:{
         fontSize: 22,
         fontWeight: 'bold',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        color: '#fff'
     },
     button:{
         width: '90%',
-        backgroundColor: '#4658ED',
+        backgroundColor: '#1c1c1c',
         borderRadius: 5,
         paddingVertical: 10,
         alignItems: 'center',

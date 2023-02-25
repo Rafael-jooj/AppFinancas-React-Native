@@ -20,7 +20,7 @@ export default function Welcome() {
             <View style={style.containerLogo}>
                 <Animatable.Image
                     animation="flipInY"
-                    source={require('../../assets/logo3.png')}
+                    source={require('../../assets/logo4.png')}
                     style={{width: '100%'}}
                     resizeMode="contain"
                 />
@@ -39,13 +39,13 @@ export default function Welcome() {
 const style = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: '#4658ED'
+        backgroundColor: '#111'
     },
     containerLogo:{
         flex: 2,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#4658ED'
+        backgroundColor: '#111'
     },
     containerBox:{
         flex: 1,
@@ -60,13 +60,13 @@ const style = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 20,
         marginTop: 20,
-        color: '#4658ED'
+        color: '#111'
     },
     boxText:{
         color: '#a1a1a1'
     },
     boxButton:{
-        backgroundColor: '#4658ED',
+        backgroundColor: '#111',
         borderRadius: 50,
         position: 'absolute',
         alignSelf: 'center',

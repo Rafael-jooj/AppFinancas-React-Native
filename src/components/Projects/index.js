@@ -29,8 +29,8 @@ export default function Projects() {
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#4658ED',
-        height: '25%',
+        backgroundColor: '#1C1C1C',
+        height: 180,
         width: '90%',
         alignSelf: 'center',
         borderRadius: 15,
