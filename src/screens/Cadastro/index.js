@@ -42,7 +42,7 @@ export default function Cadastro() {
             </TouchableOpacity>
 
             <TouchableOpacity style={style.cadastro} onPress={()=> Navigation.navigate('Login')}>
-                <Text style={{color: '#111'}}>Já possui uma conta? Entre</Text>
+                <Text style={{color: '#29384D'}}>Já possui uma conta? Entre</Text>
             </TouchableOpacity>
         </Animatable.View>
       </View>
@@ -52,7 +52,7 @@ export default function Cadastro() {
 const style = StyleSheet.create({
   container:{
       flex: 1,
-      backgroundColor: '#111'
+      backgroundColor: '#29384D'
   },
   titleContainer:{
       paddingStart: '5%',
@@ -77,17 +77,17 @@ const style = StyleSheet.create({
       fontSize: 18,
       marginTop: 10,
       fontWeight: "400",
-      color: '#111'
+      color: '#29384D'
   },
   input:{
       borderBottomWidth: 1,
-      borderColor: '#111',
+      borderColor: '#29384D',
       height: 40,
       marginBottom: 20
   },
   button:{
       width: '100%',
-      backgroundColor: '#111',
+      backgroundColor: '#29384D',
       borderRadius: 5,
       paddingVertical: 10,
       alignItems: 'center',

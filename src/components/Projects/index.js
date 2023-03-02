@@ -29,7 +29,7 @@ export default function Projects() {
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#1C1C1C',
+        backgroundColor: '#475465',
         height: 180,
         width: '90%',
         alignSelf: 'center',

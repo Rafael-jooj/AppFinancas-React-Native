@@ -14,7 +14,7 @@ function TabBar(){
                 tabBarShowLabel: false,
                 tabBarStyle:{
                     position: 'absolute',
-                    backgroundColor: 'black',
+                    backgroundColor: '#475465',
                     borderTopWidth: 0,
                     bottom: 14,
                     left: 14,
@@ -29,6 +29,7 @@ function TabBar(){
                 name='Home'
                 component={Home}
                 options={{
+                    headerShown: false,
                     tabBarIcon: ({_, size, focused})=>{
                         if(focused){
                             return <Ionicons name='home' size={size} color={'#fff'}/>
@@ -54,6 +55,7 @@ function TabBar(){
                 name='Profile'
                 component={Profile}
                 options={{
+                    headerShown: false,
                     tabBarIcon: ({_, size, focused})=>{
                         if(focused){
                             return <Ionicons name='person' size={size} color={'#fff'}/>

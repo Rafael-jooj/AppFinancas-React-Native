@@ -39,13 +39,13 @@ export default function Welcome() {
 const style = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: '#111'
+        backgroundColor: '#29384D'
     },
     containerLogo:{
         flex: 2,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#111'
+        backgroundColor: '#29384D'
     },
     containerBox:{
         flex: 1,
@@ -60,13 +60,13 @@ const style = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 20,
         marginTop: 20,
-        color: '#111'
+        color: '#29384D'
     },
     boxText:{
         color: '#a1a1a1'
     },
     boxButton:{
-        backgroundColor: '#111',
+        backgroundColor: '#29384D',
         borderRadius: 50,
         position: 'absolute',
         alignSelf: 'center',

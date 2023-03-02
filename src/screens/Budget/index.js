@@ -24,7 +24,8 @@ export default function Budget() {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: '#111'
+        backgroundColor: '#29384D',
+        paddingBottom: 80
     },
     title:{
         fontSize: 22,
@@ -34,14 +35,13 @@ const styles = StyleSheet.create({
         marginBottom: 10
     },
     buttom:{
-        backgroundColor:"black",
-        width: 50,
-        height: 50,
+        backgroundColor:"#475465",
+        width: 40,
+        height: 40,
         borderRadius: 50,
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
-        bottom: 80,
-        right: '5%'
+        right: '5%',
     }
 })
