@@ -37,8 +37,8 @@ export default function Login() {
                 <Text style={style.inputText}>Senha</Text>
                 <TextInput secureTextEntry={true} placeholder='Sua senha' style={style.input} onChangeText={setSenha}/>
 
-                <TouchableOpacity style={style.button}>
-                    <Text style={style.buttonText} onPress={SingIn}>Acessar</Text>
+                <TouchableOpacity style={style.button} onPress={SingIn}>
+                    <Text style={style.buttonText}>Acessar</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={style.cadastro} onPress={()=> Navigation.navigate('SingUp')}>
